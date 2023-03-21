@@ -1,1 +1,69 @@
-<p>about works!</p>
+<h2>Sie möchten uns Kontaktieren?</h2>
+<div class="contact-page">
+  <div class="close" [routerLink]="['/']">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+    </svg>
+  </div>
+
+  <div class="inhalt">
+      <p>Sven Schuppel<br>Reilinger Str. 53<br>68789 St. Leon-Rot</p>
+      <h3>Kontakt:</h3>
+      <p>Telefon: +49 (0) 6227.545699<br>E-Mail: sven.schu.mobil@gmail.com</p>
+      <div class="contactformula">
+        <form >
+          <div class="row">
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="image-url">Email Adresse</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="image-url"
+                  pattern=""
+                  required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="img">
+                <img [src]="imagePath.value">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="content">Nachricht</label>
+                <textarea
+                  type="text"
+                  id="content"
+                  rows="6"
+                  class="form-control"
+                  formControlName="Text"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button
+              type="submit"
+              class="btn btn-success"
+              (click)="onSend()">Senden</button>
+          </div>
+        </form>
+      </div>
+</div>

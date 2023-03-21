@@ -12,6 +12,8 @@ import { LoginScreenComponent } from './login-screen/login-screen.component';
 import { LoginSelectComponent } from './login-select/login-select.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { SignupComponent } from './login-screen/signup.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ScorecardLocalComponent,
     LoginScreenComponent,
     LoginSelectComponent,
-    SettingsComponent
+    SettingsComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

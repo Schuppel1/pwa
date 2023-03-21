@@ -1,4 +1,4 @@
-.login-page {
+.signup-page {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
@@ -46,11 +46,10 @@ border-radius:30px;
   cursor: pointer;
   transition: all 0.2s;
 
-
 }
 .form button:hover,.form button:focus {
   background: #148f77;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-4px);
 }
 .form button:active {
@@ -121,13 +120,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .eye {
   cursor: pointer;
 }
 
-.close {
-  float: none;
-  position: relative;
-  width: 32px;
-  height: 32px;
-}
