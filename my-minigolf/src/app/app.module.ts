@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { StartComponent } from './start/start.component';
-import { ScorecardLocalComponent } from './scorecard-local/scorecard-local.component';
 import { LoginScreenComponent } from './login-screen/login-screen.component';
-import { LoginSelectComponent } from './login-select/login-select.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { SignupComponent } from './login-screen/signup.component';
+import { RecipeComponent } from './recipe/recipe.component';
+import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipe/recipe-list/recipe-item.component';
 
 
 @NgModule({
@@ -21,11 +23,13 @@ import { SignupComponent } from './login-screen/signup.component';
     AboutComponent,
     ImpressumComponent,
     StartComponent,
-    ScorecardLocalComponent,
     LoginScreenComponent,
-    LoginSelectComponent,
     SettingsComponent,
     SignupComponent,
+    RecipeComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
   ],
   imports: [
     BrowserModule,
